@@ -1,0 +1,39 @@
+<!DOCUMENTTYPE HTML>
+	<html>
+<head>
+<title>Assignment5.4</title>
+</head>
+
+<h1> This is Assignment 5.4</h1>
+<h2> <b>Assignment:</b></h2> Create a Constructor Object Pattern for Employee which have the properties as username, skills and basic salary.<br>
+ Create an object methods printdetails() which should display the employee details.<br>
+ Create an object methods as changesalary () which will update the salary of an employee.<br>
+ Display the final details of an employee after the change in salary.<br>
+	<p id="emp"></p>
+	<script language="JavaScript">
+/* methods in objects */
+var employee = { 
+Username   : "Akshay",
+skills : "C, Javascript, CSS, HTML",
+salary : 45000,
+ printdetails : function() {
+       return "Username: "+this.Username + " <br> skills: " + this.skills+ "<br>Salary: "+this.salary;
+    }
+};
+document.getElementById("emp").innerHTML = employee.printdetails();
+/* updating salary */
+employee.slr ={
+	salary2 : 50000,
+	changesalary : function(){
+		return this.salary;
+	}
+};
+/* Final details */
+document.write("Updated employee details<br>Username: "+employee.Username+"<br>skills: "+employee.skills+"<br>salary: "+employee.slr.salary2);
+
+
+</script>
+
+
+</body>
+</html>
